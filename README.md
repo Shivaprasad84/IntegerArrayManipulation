@@ -17,9 +17,9 @@ Run this code in an IDE which takes input at run time.
 
 Clearing the screen:
 
-   1. Use clrscr() - For TurboC Compiler (also include header conio.h)
-   2. Use system("cls") - For gcc 4.9.2 and above
-   3. Use system("clear") - For gcc/g++ compiler in Linux
+	1. Use clrscr() - For TurboC Compiler (also include header conio.h).
+	2. Use system("cls") - For gcc 4.9.2 and above.
+	3. Use system("clear") - For gcc/g++ compiler in Linux.
 
 In this program "position" does not mean index of an array i.e,
 

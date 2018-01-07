@@ -25,7 +25,8 @@ int main()
 			system("clear");
 			printf("Enter the size of the array\n");
 			scanf("%d", &n);
-			printf("Enter the %d array elements\n", n);
+			if (n > 0)
+				printf("Enter the %d array elements\n", n);
 			for (i = 0; i < n; i++)
 			{
 				scanf("%d", &a[i]);
@@ -41,7 +42,15 @@ there:
 			printf("6.Reverse the order of the array\n");
 			printf("7.Exit\n");
 			scanf("%d", &s_choice);
-			if (s_choice == 1)
+
+			if (s_choice != 1 && s_choice < 7 && n <= 0)
+			{
+noNum:
+				printf("No elements in array to execute this choice\n");
+				getchar();
+				goto bottom;
+			}
+			else if (s_choice == 1)
 			{
 
 				// Insert an element into the array
@@ -105,7 +114,7 @@ del:
 				n = n - 1;
 				if (n == 0)
 				{
-					printf("There are no more elements in the array dont choose delete previous array\n");
+					printf("There are no more elements in the array don't choose delete previous array\n");
 					getchar();
 					goto bottom;
 				}
@@ -113,7 +122,7 @@ del:
 				goto bottom;
 			}
 
-			else if (s_choice == 3)
+			else if (s_choice == 3 && n > 0)
 			{
 
 				// Sort array in ascending order (bubble sort)
@@ -141,7 +150,7 @@ sortA:
 				goto bottom;
 			}
 
-			else if (s_choice == 4)
+			else if (s_choice == 4 && n > 0)
 			{
 
 				// Sort array in descending order (bubble sort)
@@ -169,7 +178,7 @@ sortD:
 				goto bottom;
 			}
 
-			else if (s_choice == 5)
+			else if (s_choice == 5 && n > 0)
 			{
 
 				// Search for an element in the array (Linear search)
@@ -219,7 +228,7 @@ search:
 				}
 			}
 
-			else if (s_choice == 6)
+			else if (s_choice == 6 && n > 0)
 			{
 
 				// Reverse the order of the array
@@ -273,7 +282,11 @@ top:
 			printf("6.Reverse the order of the array\n");
 			printf("7.Exit\n");
 			scanf("%d", &t_choice);
-			if (t_choice == 1)
+			if (t_choice != 1 && t_choice < 7 && n <= 0)
+			{
+				goto noNum;
+			}
+			else if (t_choice == 1)
 			{
 				goto ins;
 			}
@@ -281,19 +294,19 @@ top:
 			{
 				goto del;
 			}
-			else if (t_choice == 3)
+			else if (t_choice == 3 && n > 0)
 			{
 				goto sortA;
 			}
-			else if (t_choice == 4)
+			else if (t_choice == 4 && n > 0)
 			{
 				goto sortD;
 			}
-			else if (t_choice == 5)
+			else if (t_choice == 5 && n > 0)
 			{
 				goto search;
 			}
-			else if (t_choice == 6)
+			else if (t_choice == 6 && n > 0)
 			{
 				goto reverse;
 			}

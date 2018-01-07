@@ -23,4 +23,3 @@ Clearing the screen:
 
 In this program "position" does not mean index of an array for instance let 1 2 3 4 5 be an array of 5 elements(integers), 
 in this array "position" of 3 is 3 and not 2 which is the index.
-Only input integer values.

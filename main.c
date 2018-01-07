@@ -82,7 +82,7 @@ miss:
 del:
 				printf("Enter the position of the number to be deleted\n");
 				scanf("%d", &pos);
-				if (pos <= 0 || pos - 1 > n)
+				if (pos <= 0 || pos > n)
 				{
 					printf("Invalid position\n");
 					getchar();

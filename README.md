@@ -21,9 +21,6 @@ Clearing the screen:
 	2. Use system("cls") - For gcc 4.9.2 and above.
 	3. Use system("clear") - For gcc/g++ compiler in Linux.
 
-In this program "position" does not mean index of an array i.e,
-
-Array = 1 2 3 4 5
-here the "position" of 3 is 3 and not 2 which is the index,
-also "size" means the number of elements present in the array and "elements" here mean integers.
-
+In this program "position" does not mean index of an array for instance let 1 2 3 4 5 be an array of 5 elements(integers), 
+in this array "position" of 3 is 3 and not 2 which is the index.
+Only input integer values.

@@ -120,7 +120,7 @@ del:
 sortA:
 				for (j = 0; j < n - 1; j++)
 				{
-					for (i = 0; i < n - 1; i++)
+					for (i = 0; i < n - j - 1; i++)
 					{
 						if (a[i] > a[i + 1])
 						{
@@ -148,7 +148,7 @@ sortA:
 sortD:
 				for (j = 0; j < n - 1; j++)
 				{
-					for (i = 0; i < n - 1; i++)
+					for (i = 0; i < n - j - 1; i++)
 					{
 						if (a[i] < a[i + 1])
 						{

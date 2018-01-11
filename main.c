@@ -233,15 +233,15 @@ search:
 
 				// Reverse the order of the array
 reverse:
-				for (i = 0, j = n - 1; i < n - 1 && j > i; i++, j--)
-				{
-					temp = a[i];
-					a[i] = a[j];
-					a[j] = temp;
-				}
+				
+				
+					
+					
+					
+		
 
 				printf("The reversed array is\n");
-				for (i = 0; i < n; i++)
+				for (i = n - 1; i >= 0; i--)
 				{
 					printf("%d ", a[i]);
 				}
